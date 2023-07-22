@@ -83,8 +83,109 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
     grid-area: header;
     background-color: var(--flax);
+    padding: 12px 20px 30px 20px;
+}
+
+.top-container, .search-container, .account-container {
+    display: flex;
+}
+
+.top-container {
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.search-container {
+    flex: 1;
+    gap: 8px;
+}
+
+.search {
+    font-family: Georgia, Arial, 'Times New Roman';
+    border-radius: 30px;
+    border: 2px solid var(--light-blue);
+    align-self: center;
+    width: clamp(300px, 40vw, 500px);
+    height: 30px;
+    padding: 1px 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--light-blue);
+}
+
+.search:focus {
+    outline: none !important;
+    border: 2px solid var(--celadon);
+    color: var(--celadon);
+}
+
+.account-container {
+    gap: 12px;
+}
+
+.top-image {
+    width: 30px;
+    height: auto;
+    
+}
+
+[class^="bottom"] {
+    display: flex;
+}
+
+.bottom-container {
+    justify-content: space-between;
+    gap: 20px
+}
+
+.bottom-account {
+    gap: 8px;
+}
+
+.github {
+    width: 50px;
+    height: 50px;
+}
+
+.bottom-text {
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+}
+
+.bottom-text>p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.bottom-text>.name {
+    font-size: 20px;
+}
+
+.bottom-btns {
+    align-items: center;
+    gap: 16px;
+}
+
+.bottom-btns>button {
+    background-color: var(--light-blue);
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    color: var(--lemon-chiffon);
+    border-color:royalblue;
+    transition: 0.5s;
+}
+
+.bottom-btns>button:hover {
+    background-color: var(--celadon);
+    border-color: darkcyan;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -119,6 +220,10 @@ header {
     height: 200px;
     background-color: var(--light-blue);
     border-radius: 8px;
+    transition: 1s;
+}
+
+.project:hover {
     border-left: 16px solid var(--celadon);
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
@@ -130,7 +235,7 @@ header {
 
 .project-info {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.20);
+    background-color: rgba(255, 255, 255, 0.30);
     border-bottom-right-radius: 8px;
 }
 

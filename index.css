@@ -186,6 +186,7 @@ header {
     background-color: var(--celadon);
     border-color: darkcyan;
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .content {
@@ -226,6 +227,7 @@ header {
 .project:hover {
     border-left: 16px solid var(--celadon);
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .project-header, .project-info {
@@ -240,9 +242,16 @@ header {
 }
 
 .eye {
+    box-sizing: border-box;
     position: absolute;
     width: 30px;
     height: 30px;
     right: 10px;
     bottom: 10px;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+}
+
+.eye:hover {
+    border-bottom: 2px solid var(--celadon);
 }

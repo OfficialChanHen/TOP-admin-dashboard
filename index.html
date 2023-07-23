@@ -8,105 +8,113 @@
         <script src="./index.js" defer></script>
     </head>
     <body>
-        <div class="sidebar">
-            <div class="dashboard-title">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
-                </svg>
-                <p>Dashboard</p>
-            </div>
-            <div class="sidebar-btns" id="main-btns">
-                <img src="./images/home.svg" alt="home icon">
-                <a id="home" href="./index.html">Home</a>
-
-                <img src="./images/profile.svg" alt="profile icon">
-                <a id="profile" href="./index.html">Profile</a>
-
-                <img src="./images/message.svg" alt="message icon">
-                <a id="messages" href="./index.html">Message</a>
-
-                <img src="./images/history.svg" alt="history icon">
-                <a id="history" href="./index.html">History</a>
-
-                <img src="./images/tasks.svg" alt="task icon">
-                <a id="tasks" href="./index.html">Tasks</a>
-
-                <img src="./images/communities.svg" alt="community icon">
-                <a id="communities" href="./index.html">Communities</a>
-            </div>
-
-            <div class="sidebar-btns" id="bottom-btns">
-                <img src="./images/settings.svg" alt="settings icon">
-                <a id="settings" href="./index.html">Settings</a>
-
-                <img src="./images/support.svg" alt="support icon">
-                <a id="support" href="./index.html">Support</a>
-
-                <img src="./images/privacy.svg" alt="privacy icon">
-                <a id="privacy" href="./index.html">Privacy</a>
-            </div>
-        </div>
-
-        <header>
-            <div class="top-container">
-                <div class="search-container">
-                    <img src="./images/magnify.svg" alt="magnify glass" class="top-image">
-                    <input type="text" class="search">
+        <main>
+            <div class="sidebar">
+                <div class="dashboard-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+                    </svg>
+                    <p>Dashboard</p>
                 </div>
-
-                <div class="account-container">
-                    <img src="./images/bell.svg" alt="bell" class="top-image">
-                    <img src="./images/github.svg" alt="Github logo" class="top-image">
-                    <p class="name">Chanmonirathtanak Hen</p>
+                <div class="sidebar-btns" id="main-btns">
+                    <img src="./images/home.svg" alt="home icon">
+                    <a id="home" href="./index.html">Home</a>
+    
+                    <img src="./images/profile.svg" alt="profile icon">
+                    <a id="profile" href="./index.html">Profile</a>
+    
+                    <img src="./images/message.svg" alt="message icon">
+                    <a id="messages" href="./index.html">Message</a>
+    
+                    <img src="./images/history.svg" alt="history icon">
+                    <a id="history" href="./index.html">History</a>
+    
+                    <img src="./images/tasks.svg" alt="task icon">
+                    <a id="tasks" href="./index.html">Tasks</a>
+    
+                    <img src="./images/communities.svg" alt="community icon">
+                    <a id="communities" href="./index.html">Communities</a>
+                </div>
+    
+                <div class="sidebar-btns" id="bottom-btns">
+                    <img src="./images/settings.svg" alt="settings icon">
+                    <a id="settings" href="./index.html">Settings</a>
+    
+                    <img src="./images/support.svg" alt="support icon">
+                    <a id="support" href="./index.html">Support</a>
+    
+                    <img src="./images/privacy.svg" alt="privacy icon">
+                    <a id="privacy" href="./index.html">Privacy</a>
                 </div>
             </div>
-
-            <div class="bottom-container">
-                <div class="bottom-account">
-                    <img src="./images/github.svg" alt="Github logo" class="github">
-
-                    <div class="bottom-text">
-                        <p class="greeting">Hi, there</p>
-                        <p class="name">Chanmonirathtanak Hen (@OfficialChanHen)</p>
+    
+            <header>
+                <div class="top-container">
+                    <div class="search-container">
+                        <img src="./images/magnify.svg" alt="magnify glass" class="top-image">
+                        <input type="text" class="search">
+                    </div>
+    
+                    <div class="account-container">
+                        <img src="./images/bell.svg" alt="bell" class="top-image">
+                        <img src="./images/github.svg" alt="Github logo" class="top-image">
+                        <p class="name">Chanmonirathtanak Hen</p>
                     </div>
                 </div>
-                
-                <div class="bottom-btns">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+    
+                <div class="bottom-container">
+                    <div class="bottom-account">
+                        <img src="./images/github.svg" alt="Github logo" class="github">
+    
+                        <div class="bottom-text">
+                            <p class="greeting">Hi, there</p>
+                            <p class="name">Chanmonirathtanak Hen (@OfficialChanHen)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bottom-btns">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </header>
+    
+            <div class="content">
+                <h2>Your Project</h2>
+                <div class="projects">
+                    <div class="project" id="landing-proj">
+                        <h3 class="project-header">Landing Page</h3>
+                        <p class="project-info">A basic landing page to showcase basic HTML and CSS.</p>
+                        <img class="eye" 
+                        id="landing-page" src="./images/eye-outline.svg"></img>
+                    </div>
+    
+                    <div class="project" id="sketch-proj">
+                        <h3 class="project-header">Sketch Pad</h3>
+                        <p class="project-info">Draw and design on a sketch pad.</p>
+                        <img class="eye" id="sketch-page" src="./images/eye-outline.svg"></img>
+                    </div>
+    
+                    <div class="project" id="calculator-proj">
+                        <h3 class="project-header">Calculator</h3>
+                        <p class="project-info">A functional working calculator that is able to do multiple operations.</p>
+                        <img class="eye" id="calculator-page" src="./images/eye-outline.svg"></img>
+                    </div>
+    
+                    <div class="project" id="signup-proj">
+                        <h3 class="project-header">Sign-up Page</h3>
+                        <p class="project-info">Users can create an account for a mock company. Completely front-end.</p>
+                        <img class="eye" id="signup-page" src="./images/eye-outline.svg"></img>
+                    </div>
+    
+                    <div class="project" id="admin-proj">
+                        <h3 class="project-header">Admin Dashboard</h3>
+                        <p class="project-info">Admin dashboard to navigate between projects.</p>
+                        <img class="eye" id="admin-page" src="./images/eye-outline.svg"></img>
+                    </div>
                 </div>
             </div>
-        </header>
-
-        <div class="content">
-            <h2>Your Project</h2>
-            <div class="projects">
-                <div class="project" id="landing-proj">
-                    <h3 class="project-header">Landing Page</h3>
-                    <p class="project-info">A basic landing page to showcase basic HTML and CSS.</p>
-                    <img class="eye" 
-                    id="landing-page" src="./images/eye-outline.svg"></img>
-                </div>
-
-                <div class="project" id="calculator-proj">
-                    <h3 class="project-header">Calculator</h3>
-                    <p class="project-info">A functional working calculator that is able to do multiple operations.</p>
-                    <img class="eye" id="calculator-page" src="./images/eye-outline.svg"></img>
-                </div>
-
-                <div class="project" id="signup-proj">
-                    <h3 class="project-header">Sign-up Page</h3>
-                    <p class="project-info">Users can create an account for a mock company. Completely front-end.</p>
-                    <img class="eye" id="signup-page" src="./images/eye-outline.svg"></img>
-                </div>
-
-                <div class="project" id="admin-proj">
-                    <h3 class="project-header">Admin Dashboard</h3>
-                    <p class="project-info">Admin dashboard to navigate between projects.</p>
-                    <img class="eye" id="admin-page" src="./images/eye-outline.svg"></img>
-                </div>
-            </div>
-        </div>
+        </main>
     </body>
 </html>

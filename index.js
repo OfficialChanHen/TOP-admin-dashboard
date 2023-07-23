@@ -8,6 +8,9 @@ const viewProj = (project) => {
         case 'landing-page':
             page = 'https://officialchanhen.github.io/odin-project-landing-page/';
             break;
+        case 'sketch-page':
+            page = 'https://officialchanhen.github.io/sketch-pad/';
+            break;
         case 'calculator-page':
             page = 'https://officialchanhen.github.io/calculator/';
             break;
@@ -37,6 +40,9 @@ const projRedirect = (project) => {
     switch(project.id) {
         case 'landing-proj':
             page = 'https://github.com/OfficialChanHen/odin-project-landing-page';
+            break;
+        case 'sketch-proj':
+            page = 'https://github.com/OfficialChanHen/sketch-pad';
             break;
         case 'calculator-proj':
             page = 'https://github.com/OfficialChanHen/calculator';
